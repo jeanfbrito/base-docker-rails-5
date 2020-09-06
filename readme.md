@@ -2,7 +2,7 @@
 
 Run the command:
 ```
-docker-compose run rails bundle exec rails new . --force --database=postgresql
+docker-compose run web bundle exec rails new . --force --database=postgresql
 
 docker-compose build
 ```
@@ -17,7 +17,7 @@ password: postgres
 
 Run migrations:
 ```
-docker-compose run rails bin/rake db:create db:migrate
+docker-compose run web bin/rake db:create db:migrate
 ```
 
 Execute:
